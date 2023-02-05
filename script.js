@@ -32,11 +32,11 @@ class SuperMath {
             default:
                 result = 'Error! No operation selected.';
         }
-        return res;
+        return result;
     };
 
     input() {
-        let message = confirm("Everything is OK?");
+        let message = confirm("The values are correct?");
         if (message == true) {
             alert(this.checkObj(this.object));
         } else {
@@ -49,5 +49,5 @@ class SuperMath {
         }
     }
 }
-const resultSuperMath = new SuperMath({});
+const resultSuperMath = new SuperMath();
 resultSuperMath.input()
